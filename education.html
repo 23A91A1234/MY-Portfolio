@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Bhavana</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #ffe66d;
+      --secondary-color: #6c757d;
+      --background-light: #f8f9fa;
+      --background-dark: #343a40;
+      --text-color-light: #343a40;
+      --text-color-dark: #f8f9fa;
+      --card-background: #ffffff;
+      --border-color: #dee2e6;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background-color: var(--background-light);
+      color: var(--text-color-light);
+      line-height: 1.6;
+    }
+    .container { width: 85%; max-width: 1200px; margin: auto; padding: 0 15px; }
+
+    /* Header */
+    header {
+      background: var(--card-background);
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px; font-weight: bold; color: #ff6b6b;
+      text-decoration: none; display: flex; align-items: center;
+    }
+    header .logo i { margin-right: 10px; color: var(--secondary-color); }
+    header nav ul { margin: 0; padding: 0; list-style: none; }
+    header nav ul li { display: inline-block; margin-left: 30px; }
+    header nav ul li a {
+      color: var(--text-color-light); text-decoration: none;
+      font-weight: 600; transition: color 0.3s ease;
+    }
+    header nav ul li a:hover, header nav ul li a.active { color: var(--primary-color); }
+
+    /* Education Section */
+    .education-section {
+      padding: 80px 0;
+      background: var(--card-background);
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .education-section h1 {
+      text-align: center;
+      font-size: 42px;
+      color: var(--primary-color);
+      margin-bottom: 50px;
+    }
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .edu-card {
+      background: var(--background-light);
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 5px solid var(--primary-color);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .edu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .edu-card i {
+      font-size: 40px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    .edu-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: var(--text-color-light);
+    }
+    .edu-card h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--secondary-color);
+    }
+    .edu-card p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: var(--secondary-color);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 30px 0;
+      background: linear-gradient(135deg, #ff6b6b, #fcbf49); color: var(--text-color-dark);
+      margin-top: 50px; border-top: 1px solid var(--primary-color);
+    }
+    footer .social-icons a {
+      color: var(--text-color-dark); margin: 0 15px;
+      font-size: 28px; text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer .social-icons a:hover { color: var(--primary-color); }
+    footer p { margin-top: 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fas fa-code"></i>Bhavana</a>
+      <nav>
+        <ul>
+                    <li><a href="./home.html">About</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                    <li><a href="./education.html" class="active">Education</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./certificate.html">Certificates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Education Section -->
+  <main>
+    <section class="education-section container">
+      <h1>My Education</h1>
+      <div class="education-grid">
+
+        <!-- College -->
+        <div class="edu-card">
+          <i class="fas fa-university"></i>
+          <h3>Aditya University</h3>
+          <h4>B.Tech in Information Technology</h4>
+          <p><strong>Duration:</strong> Sept 2023 – May 2027</p>
+          <p><strong>CGPA:</strong> 9.43</p>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="edu-card">
+          <i class="fas fa-book"></i>
+          <h3>Pratibha Junior College</h3>
+          <h4>MPC (Maths, Physics, Chemistry)</h4>
+          <p><strong>Duration:</strong> July 2021 – May 2023</p>
+          <p><strong>Percentage:</strong> 96.8%</p>
+        </div>
+
+        <!-- 10th Standard -->
+        <div class="edu-card">
+          <i class="fas fa-school"></i>
+          <h3>School Name (Update Yours)</h3>
+          <h4>10th Standard</h4>
+          <p><strong>Duration:</strong> 2019 – 2021</p>
+          <p><strong>Percentage:</strong> 95%</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/23A91A1234" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:23a91a1234@aec.edu.in"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>Crafted with <i class="fas fa-heart" style="color:#e74c3c;"></i> by Bhavana &copy; 2025. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
